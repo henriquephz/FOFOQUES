@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASANOVERS</title>
+</head>
+<body>
+
+    <h1>CASANOVER</h1>
+
+    <!-- Botão para exibir a imagem do cachorrinho -->
+    <button onclick="exibirImagem()">Exibir Imagem</button>
+
+    <!-- Botão para exibir a caixa de diálogo -->
+    <button onclick="exibirCaixaDialogo()">Exibir Caixa de Diálogo</button>
+
+    <!-- Área para exibir a imagem do cachorrinho -->
+    <div id="areaImagem"></div>
+
+    <script>
+        // Função para exibir a imagem do cachorrinho
+        function exibirImagem() {
+            // Cria um elemento de imagem
+            var imagem = document.createElement("img");
+            // Define o caminho da imagem (substitua "URL_DA_IMAGEM" pela URL ou caminho local da imagem)
+            imagem.src = "casa.png";
+            // Adiciona a imagem à área designada
+            document.getElementById("areaImagem").appendChild(imagem);
+        }
+
+        // Função para exibir a caixa de diálogo
+        function exibirCaixaDialogo() {
+            // Exibe a caixa de diálogo com uma mensagem
+            alert("VOCÊ É GAY");
+        }
+    </script>
+
+</body>
+</html>
